@@ -82,7 +82,7 @@ choice
         bool "STM32H743"
         select MACH_STM32H7
     config MACH_STM32H750
-        bool "STM32H750" if 0
+        bool "STM32H750"
         select MACH_STM32H7
     config MACH_STM32L412
         bool "STM32L412" if 0
@@ -258,7 +258,7 @@ choice
     config STM32_FLASH_START_4000
         bool "16KiB bootloader (HID Bootloader)" if MACH_STM32F207 || MACH_STM32F401 || MACH_STM32F4x5 || MACH_STM32F103 || MACH_STM32F072
     config STM32_FLASH_START_20000
-        bool "128KiB bootloader (SKR SE BX v2.0)" if MACH_STM32H743 || MACH_STM32H723
+        bool "128KiB bootloader (SKR SE BX v2.0)" if MACH_STM32H743 || MACH_STM32H723 || MACH_STM32H750
 endchoice
 config FLASH_APPLICATION_ADDRESS
     hex
